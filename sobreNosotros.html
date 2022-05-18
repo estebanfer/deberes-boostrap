@@ -13,7 +13,7 @@
 	<nav class="navbar navbar-expand-lg bg-primary">
 		<div class="container-fluid">
 			<div class="nav-brand">
-				<img src="logotipo_atlempo.png" alt="logo" width="120" class="bg-white rounded p-1 me-2">
+				<a href="index.html"><img src="logotipo_atlempo.png" alt="logo" width="120" class="bg-white rounded p-1 me-2"></a>
 			</div>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -29,8 +29,8 @@
 						</a>
 
 						<ul class="dropdown-menu" aria-labelledby="Info">
-							<li><a class="dropdown-item" href="#">Sucursales</a></li>
-							<li><a class="dropdown-item" href="#">Horarios</a></li>
+							<li><a class="dropdown-item" href="https://www.utu.edu.uy/" target="_blank">Página de UTU</a></li>
+							<li><a class="dropdown-item" href="http://iticetp.edu.uy/portada-ganadora-2015/" target="_blank">Página de ITI</a></li>
 						</ul>
 					</li>
 					<li class="nav-item">
@@ -47,12 +47,49 @@
 			</div>
 		</div>
 	</nav>
-    <h2>Atlempo es un empresa fundada en 2022 por un grupo de estudiantes de ITI.</h2>
-	<p>
-		Nos encargamos de crear aplicaciónes y páginas web para nuestros clientes que son re chetos y nos pagan re bien.
-		<br>
-		Nuestra misión, a través de nuestros juegos, es contar historias y expresar la creatividad de maneras que no son posibles con los medios tradicionales. Como forma de arte interactivo, los juegos también pueden convertirse en parte de su historia. A través de eso, nuestro objetivo es inspirar a otros.
-	</p>
+
+	<nav>
+		<div class="nav nav-tabs" id="nav-tab" role="tablist">
+			<button class="nav-link active" id="nav-quienessomos-tab" data-bs-toggle="tab" data-bs-target="#nav-quienessomos" type="button" role="tab" aria-controls="nav-quienessomos" aria-selected="true">¿Quiénes somos?</button>
+			<button class="nav-link" id="nav-elequipo-tab" data-bs-toggle="tab" data-bs-target="#nav-elequipo" type="button" role="tab" aria-controls="nav-elequipo" aria-selected="false">El equipo</button>
+			<button class="nav-link" id="nav-mision-tab" data-bs-toggle="tab" data-bs-target="#nav-mision" type="button" role="tab" aria-controls="nav-mision" aria-selected="false">Misión Actual</button>
+			<button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Próximamente</button>
+		</div>
+	</nav>
+	<section>
+		<div class="tab-content" id="nav-tabContent">
+			<article class="tab-pane fade show active" id="nav-quienessomos" role="tabpanel" aria-labelledby="nav-quienessomos-tab" tabindex="0">
+				<h2>¿Quiénes somos?</h2>
+				<h3>Atlempo es un empresa fundada en 2022 por un grupo de estudiantes de ITI.</h3>
+				<p>
+					Nos encargamos de crear aplicaciones y páginas web innovativas.
+					<br>
+					A través de nuestros juegos, queremos contar historias y expresar la creatividad de maneras que no son posibles con los medios tradicionales.
+					<br>
+					Como forma de arte interactivo, los juegos también pueden convertirse en parte de su historia.
+					<br>
+					A través de eso, nuestro objetivo es inspirar la imaginación de las generaciones futuras.
+				</p>
+			</article>
+			<article class="tab-pane fade" id="nav-elequipo" role="tabpanel" aria-labelledby="nav-elequipo-tab" tabindex="0">
+				<h2>Integrantes</h2>
+				<h3>Somos un equipo integrado por 4 desarrolladores web:</h3>
+				<ul class="list-group">
+					<li class="list-group-item"><a href="https://github.com/SebAti95">Sebastián Atienza</a></li>
+					<li class="list-group-item"><a href="https://github.com/ArianDaSilva">Arián Da Silva</a></li>
+					<li class="list-group-item"><a href="https://github.com/JosHue12">José Huerta</a></li>
+					<li class="list-group-item"><a href="https://github.com/estebanfer">Esteban Ferrer</a></li>
+				</ul>
+			</article>
+			<article class="tab-pane fade" id="nav-mision" role="tabpanel" aria-labelledby="nav-mision-tab" tabindex="0">
+				<h2>Misión Actual</h2>
+				<h3>Estamos desarrollando nuestro proyecto de pasaje de grado: SISGRAN</h3>
+				<p>Es un sistema informático para administrar las huertas orgánicas de nuestra región.</p>
+			</article>
+			<article class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">información inutil</article>
+		</div>
+	</section>
+
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
