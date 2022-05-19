@@ -11,16 +11,16 @@
 	<link rel="stylesheet" href="css_personalizado.css">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 <nav class="navbar navbar-expand-lg bg-primary">
 	<div class="container-fluid">
 		<div class="nav-brand">
 			<a href="index.html"><img src="logotipo_atlempo.png" alt="logo" width="120" class="bg-white rounded p-1 me-2"></a>
 		</div>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-			data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-			aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -58,12 +58,22 @@
 		Para contactar con Atlempo por favor complete el formulario. Si desea que le llamemos por favor incluya su número de teléfono. 
 		<br>
 		Nuestro objetivo es responder por correo electrónico dentro de las 48 horas. 
+		<br>
+		También nos puedes encontrar en las redes sociales (ver en Sobre Nosotros)
+
+		<ul>
+			<li>
+				<b>URUGUAY</b>	+598 2486 0584
+			</li>
+			<li>
+				<b>ARGENTINA</b> +54 9 11 1234-5678
+			</li>
+			<li>
+				<b>BRASIL</b> +54 9 11 1234-5678
+			</li>
+		</ul>
 	</p> 
-	<p>También puedes encontrarnos en estas redes sociales:</p>
-		<p><a href="facebook.com">Facebook</a></p>
-		<p><a href="instagram.com">Instagram</a></p>
-		<p><a href="youtube.com">Youtube</a></p>
-		<p><a href="linkedin.com">Linkedin</a></p>
+	
 
 	<section class="d-flex justify-content-center align-items-center">
 
@@ -80,12 +90,12 @@
 				<input type="nombre" class="form-control" id="exampleInputnombre" aria-describedby="sunombre"
 					maxlength="15" placeholder="ej: Mario" required>
 
-					<label for="exampleInputCedula1" class="form-label">Cédula</label>
-				<input type="cedula" class="form-control" id="exampleInputcedula" aria-describedby="cedula" minlength="5" placeholder="ej: 53566317" required>
-				
+				<label for="exampleInputCedula1" class="form-label">Cédula</label>
+				<input type="number" class="form-control" id="exampleInputcedula" aria-describedby="cedula" min="50000" placeholder="ej: 53566317" required>
 				<div id="cedula" class="form-text">Sin puntos ni guiones. (-.-) </div>
+
 				<label for="exampleedad" class="form-label">Edad</label>
-				<input type="edad" class="form-control" id="exampleInputedad" aria-describedby="suedad" min="18" maxlength="2"
+				<input type="number" class="form-control" id="exampleInputedad" aria-describedby="suedad" min="18" max="118"
 					placeholder="ej: 18" required>
 
 				<label for="exampleInputEmail1" class="form-label">Dirección de correo electrónico</label>
@@ -125,9 +135,21 @@
 			</div>
 		</form>	
 	</section>
-
 	<br>
 	<br>
+	<footer class="text-center p-3 mt-auto">
+		<div class="btn-group" role="group" aria-label="Basic example">
+			<a href="index.html">
+				<button type="button" class="btn btn-secondary">Pagina Anterior</button>
+			</a>
+			<a href="index.html">
+				<button type="button" class="btn btn-secondary">Inicio</button>
+			</a>
+			<a href="sobreNosotros.html">
+				<button type="button" class="btn btn-secondary">Pagina Siguiente</button>
+			</a>
+		</div>
+	</footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
